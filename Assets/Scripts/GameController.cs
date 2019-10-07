@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    
     public List<Button> btns = new List<Button>();
     public Sprite image;
     public Sprite[] puzzles;
     public List<Sprite> gamePuzzles = new List<Sprite>();
 
+    public int nextScene;
+
     public Text uiText;
+    public Text healthTxt;
     public float availableTime;
 
     private float seconds;
@@ -32,7 +37,10 @@ public class GameController : MonoBehaviour
     private string firstGuessPuzzle;
     private string secondGuessPuzzle;
 
+    // health
+    public int health = 3;
     
+
     private void Awake()
     {
         //puzzles = Resources.LoadAll<Sprite>("Sprites");    
@@ -45,6 +53,8 @@ public class GameController : MonoBehaviour
         AddGamePuzzles();
         Shuffle(gamePuzzles);
         gameGuesses = gamePuzzles.Count / 2;
+        healthTxt.text = health.ToString();
+     
     }
 
     void GetButtons()
@@ -85,12 +95,15 @@ public class GameController : MonoBehaviour
     {
         string name = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
 
+        
+
         if (!firstGuess)
         {
             firstGuess = true;
             firstGuessIndex = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
             firstGuessPuzzle = gamePuzzles[firstGuessIndex].name;
             btns[firstGuessIndex].image.sprite = gamePuzzles[firstGuessIndex];
+            btns[firstGuessIndex].interactable = false;
 
         }
         else if (!secondGuess)
@@ -99,7 +112,14 @@ public class GameController : MonoBehaviour
             secondGuessIndex = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
             secondGuessPuzzle = gamePuzzles[secondGuessIndex].name;
             btns[secondGuessIndex].image.sprite = gamePuzzles[secondGuessIndex];
+            btns[secondGuessIndex].interactable = false;
             countGuesses++;
+
+            if (firstGuessPuzzle != secondGuessPuzzle)
+            {
+                btns[firstGuessIndex].interactable = true;
+                btns[secondGuessIndex].interactable = true;
+            }
 
             StartCoroutine(CheckIfThePuzzlesMatch());
         }
@@ -116,9 +136,22 @@ public class GameController : MonoBehaviour
             btns[firstGuessIndex].interactable = false;
             btns[secondGuessIndex].interactable = false;
 
+            if (gamePuzzles[firstGuessIndex].name == "axe-card" && gamePuzzles[secondGuessIndex].name == "axe-card")
+            {
+                if (health == 1)
+                {
+                    SceneManager.LoadSceneAsync("Gameover");
+                }
+                health--;
+                healthTxt.text = health.ToString();
+                
+            }
+                
             // color goes transparent, can comment out if still want to see them
             btns[firstGuessIndex].image.color = new Color(0,0,0,0);
             btns[secondGuessIndex].image.color = new Color(0, 0, 0, 0);
+
+
 
 
             CheckIfTheGameIsFinished();
@@ -147,7 +180,14 @@ public class GameController : MonoBehaviour
         if (countCorrectGuesses == gameGuesses)
         {
             print("finished");
+            StartCoroutine(NextLevel()) ;
         }
+    }
+
+    IEnumerator NextLevel()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(nextScene);
     }
 
     void Shuffle(List<Sprite> list)
@@ -169,5 +209,10 @@ public class GameController : MonoBehaviour
         remainingTime = string.Format( "{0:00} : {1:00}", minutes, seconds);
 
         uiText.text = remainingTime;
+
+        if (gameTime <= 0)
+        {
+            SceneManager.LoadSceneAsync("Gameover");
+        }
     }
 }
