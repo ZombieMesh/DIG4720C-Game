@@ -10,6 +10,15 @@ public class GameController : MonoBehaviour
     public Sprite[] puzzles;
     public List<Sprite> gamePuzzles = new List<Sprite>();
 
+    public Text uiText;
+    public float availableTime;
+
+    private float seconds;
+    private float minutes;
+    private float gameTime;
+
+    private string remainingTime;
+
     private bool firstGuess;
     private bool secondGuess;
 
@@ -150,5 +159,15 @@ public class GameController : MonoBehaviour
             list[i] = list[randomIndex];
             list[randomIndex] = temp;
         }
+    }
+
+    private void Update()
+    {
+        gameTime = (int)(availableTime - Time.timeSinceLevelLoad);
+        seconds = Mathf.CeilToInt(availableTime - Time.timeSinceLevelLoad) % 60;
+        minutes = Mathf.CeilToInt(availableTime - Time.timeSinceLevelLoad) / 60;
+        remainingTime = string.Format( "{0:00} : {1:00}", minutes, seconds);
+
+        uiText.text = remainingTime;
     }
 }
