@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WinScript : MonoBehaviour
+public class WinCondition : MonoBehaviour
 {
     public void LoadMenu()
     {
