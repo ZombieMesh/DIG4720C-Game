@@ -26,9 +26,9 @@ public class GameController : MonoBehaviour
     private bool firstGuess;
     private bool secondGuess;
 
-    private int countGuesses;
+    public int countGuesses;
     private int countCorrectGuesses;
-    private int gameGuesses;
+    public int gameGuesses;
 
     private int firstGuessIndex;
     private int secondGuessIndex;
@@ -114,15 +114,31 @@ public class GameController : MonoBehaviour
             btns[secondGuessIndex].interactable = false;
             countGuesses++;
 
-            if (gamePuzzles[firstGuessIndex].name == "axe-card" || gamePuzzles[secondGuessIndex].name == "axe-card")
+            if (gamePuzzles[firstGuessIndex].name == "axe-card" && gamePuzzles[secondGuessIndex].name == "axe-card")
             {
+                StartCoroutine(CheckIfThePuzzlesMatch());
+            }
+
+            else if (gamePuzzles[firstGuessIndex].name == "axe-card" || gamePuzzles[secondGuessIndex].name == "axe-card")
+            {
+                if (health == 1)
+                {
+                    SceneManager.LoadSceneAsync("Gameover");
+                }
+
                 health--;
                 healthTxt.text = health.ToString();
                 if (gamePuzzles[firstGuessIndex].name == "axe-card")
+                {
                     btns[firstGuessIndex].image.color = new Color(0, 0, 0, 0);
+                }
 
-                if (gamePuzzles[secondGuessIndex].name == "axe-card")
-                    btns[secondGuessIndex].image.color = new Color(0, 0, 0, 0);
+
+                else if (gamePuzzles[secondGuessIndex].name == "axe-card")
+                {
+                    
+                  StartCoroutine(AxeCardDelay());
+                }
 
             }
 
@@ -137,6 +153,13 @@ public class GameController : MonoBehaviour
 
             StartCoroutine(CheckIfThePuzzlesMatch());
         }
+    }
+
+    IEnumerator AxeCardDelay()
+    {
+        yield return new WaitForSeconds(.5f);
+        btns[secondGuessIndex].image.color = new Color(0, 0, 0, 0);
+        countCorrectGuesses++;
     }
 
     IEnumerator CheckIfThePuzzlesMatch()
