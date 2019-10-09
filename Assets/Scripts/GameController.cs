@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    
     public List<Button> btns = new List<Button>();
     public Sprite image;
     public Sprite[] puzzles;
@@ -39,7 +38,7 @@ public class GameController : MonoBehaviour
 
     // health
     public int health = 3;
-    
+
 
     private void Awake()
     {
@@ -54,7 +53,7 @@ public class GameController : MonoBehaviour
         Shuffle(gamePuzzles);
         gameGuesses = gamePuzzles.Count / 2;
         healthTxt.text = health.ToString();
-     
+
     }
 
     void GetButtons()
@@ -95,7 +94,7 @@ public class GameController : MonoBehaviour
     {
         string name = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
 
-        
+
 
         if (!firstGuess)
         {
@@ -115,11 +114,26 @@ public class GameController : MonoBehaviour
             btns[secondGuessIndex].interactable = false;
             countGuesses++;
 
+            if (gamePuzzles[firstGuessIndex].name == "axe-card" || gamePuzzles[secondGuessIndex].name == "axe-card")
+            {
+                health--;
+                healthTxt.text = health.ToString();
+                if (gamePuzzles[firstGuessIndex].name == "axe-card")
+                    btns[firstGuessIndex].image.color = new Color(0, 0, 0, 0);
+
+                if (gamePuzzles[secondGuessIndex].name == "axe-card")
+                    btns[secondGuessIndex].image.color = new Color(0, 0, 0, 0);
+
+            }
+
             if (firstGuessPuzzle != secondGuessPuzzle)
             {
+                
                 btns[firstGuessIndex].interactable = true;
                 btns[secondGuessIndex].interactable = true;
             }
+
+            
 
             StartCoroutine(CheckIfThePuzzlesMatch());
         }
@@ -135,7 +149,7 @@ public class GameController : MonoBehaviour
             // cant touch buttons
             btns[firstGuessIndex].interactable = false;
             btns[secondGuessIndex].interactable = false;
-
+            /*
             if (gamePuzzles[firstGuessIndex].name == "axe-card" && gamePuzzles[secondGuessIndex].name == "axe-card")
             {
                 if (health == 1)
@@ -144,16 +158,11 @@ public class GameController : MonoBehaviour
                 }
                 health--;
                 healthTxt.text = health.ToString();
-                
             }
-                
+            */
             // color goes transparent, can comment out if still want to see them
-            btns[firstGuessIndex].image.color = new Color(0,0,0,0);
-            btns[secondGuessIndex].image.color = new Color(0, 0, 0, 0);
-
-
-
-
+          //  btns[firstGuessIndex].image.color = new Color(0, 0, 0, 0);
+            //btns[secondGuessIndex].image.color = new Color(0, 0, 0, 0);
             CheckIfTheGameIsFinished();
         }
 
@@ -176,12 +185,14 @@ public class GameController : MonoBehaviour
     void CheckIfTheGameIsFinished()
     {
         countCorrectGuesses++;
-
         if (countCorrectGuesses == gameGuesses)
         {
             print("finished");
-            StartCoroutine(NextLevel()) ;
+            StartCoroutine(NextLevel());
         }
+
+        // if the only buttons left are axe buttons, then end game
+
     }
 
     IEnumerator NextLevel()
