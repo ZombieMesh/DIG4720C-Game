@@ -702,8 +702,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1a5ff0478f6decc4aa5e7c2433d8aa0d, type: 3}
   - {fileID: 21300000, guid: 8e2a309db6a839042a70e4b81485b8fb, type: 3}
   gamePuzzles: []
-  nextScene: 4
+  nextScene: 8
   uiText: {fileID: 1669662982}
   healthTxt: {fileID: 372049839}
   availableTime: 120
+  countGuesses: 0
+  gameGuesses: 0
   health: 3
