@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 9695b58ef47501741a8f76435df31475
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Gameover.unity
@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NarrativeScene.unity
     guid: f23e9998e26b21c4e9ade3c4f84eec82
+  - enabled: 1
+    path: Assets/Scenes/Main Screen.unity
+    guid: 52474e51bb35789478107b78e24fd892
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 2da7410771c368146838a7ece36f2e5a
   m_configObjects: {}
