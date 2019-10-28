@@ -7,7 +7,7 @@ public class DateChoice : MonoBehaviour
 {
    public void ChooseJin()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("NarrativeScene");
     }
 
     public void ChooseDulla()
