@@ -10,6 +10,11 @@ public class DateChoice : MonoBehaviour
         SceneManager.LoadScene("NarrativeScene");
     }
 
+    public void ChooseIleana()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
     public void ChooseDulla()
     {
         SceneManager.LoadScene("Level 2");
