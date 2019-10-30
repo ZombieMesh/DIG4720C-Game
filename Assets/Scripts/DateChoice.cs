@@ -7,17 +7,17 @@ public class DateChoice : MonoBehaviour
 {
    public void ChooseJin()
     {
-        SceneManager.LoadScene("NarrativeScene");
+        SceneManager.LoadScene("JinSoyooNarrativeScene");
     }
 
     public void ChooseIleana()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("IleanaNarrativeScene");
     }
 
     public void ChooseDulla()
     {
-        SceneManager.LoadScene("Level 2");
+        SceneManager.LoadScene("DullaNarrativeScene");
     }
 
     public void ChooseScience()
