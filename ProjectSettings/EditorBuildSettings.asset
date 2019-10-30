@@ -41,4 +41,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DullaNarrativeScene.unity
     guid: 239e5c940639672419686ea2a375fcf0
+  - enabled: 1
+    path: Assets/Scenes/DullaWin.unity
+    guid: 2a8103bdeb2fb4b4688a852af105fa3f
+  - enabled: 1
+    path: Assets/Scenes/Frankie Win.unity
+    guid: 9e0194b2b7115244d8029c5ac2c2a5bf
+  - enabled: 1
+    path: Assets/Scenes/Ileana Win.unity
+    guid: 3deb018b35c8a8045a0918add8088d2f
+  - enabled: 1
+    path: Assets/Scenes/JinSo Win.unity
+    guid: 11f9568870b758f48b991b4e48ebf002
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 1b1f52a8b30e0b8439ce92847d913b1c
   m_configObjects: {}

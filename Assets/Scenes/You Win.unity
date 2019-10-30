@@ -202,8 +202,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1973712595}
-        m_MethodName: LoadMenu
+      - m_Target: {fileID: 1973712590}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1126,7 +1126,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1973712590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4449750f295e4254bad088ea5062502e, type: 3}
+  m_Script: {fileID: 11500000, guid: c29ee13f5c3bf434fa1d873ad51e1122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2030236835
