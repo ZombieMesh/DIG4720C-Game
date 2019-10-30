@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Dulla
-  nameColor: {r: 0.68032926, g: 0.18160377, b: 0.7264151, a: 1}
+  nameColor: {r: 1, g: 0.8039216, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
@@ -658,7 +658,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 0.8039216, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -895,23 +895,15 @@ GameObject:
   - component: {fileID: 1434231480}
   - component: {fileID: 1434231479}
   - component: {fileID: 1434231467}
-  - component: {fileID: 1434231468}
-  - component: {fileID: 1434231465}
   - component: {fileID: 1434231464}
-  - component: {fileID: 1434231466}
-  - component: {fileID: 1434231478}
   - component: {fileID: 1434231483}
   - component: {fileID: 1434231484}
   - component: {fileID: 1434231481}
-  - component: {fileID: 1434231474}
-  - component: {fileID: 1434231476}
-  - component: {fileID: 1434231475}
-  - component: {fileID: 1434231477}
-  - component: {fileID: 1434231473}
-  - component: {fileID: 1434231469}
+  - component: {fileID: 1434231465}
   - component: {fileID: 1434231470}
-  - component: {fileID: 1434231472}
-  - component: {fileID: 1434231471}
+  - component: {fileID: 1434231469}
+  - component: {fileID: 1434231468}
+  - component: {fileID: 1434231466}
   m_Layer: 0
   m_Name: Dulla
   m_TagString: Untagged
@@ -932,11 +924,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 59.63965, y: 251.65533}
+  scrollPos: {x: -25.013351, y: 118.75638}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.6700003
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -944,7 +936,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1434231468}
+  - {fileID: 1434231465}
   selectedCommands: []
   variables: []
   description: 
@@ -996,7 +988,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 96.880615
-    y: 54.582077
+    y: 48.405506
     width: 120
     height: 40
   tint: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
@@ -1029,9 +1021,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  text: Your tattoo is amazing
+  text: Hows your night going?
   description: 
-  targetBlock: {fileID: 1434231465}
+  targetBlock: {fileID: 1434231470}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -1054,21 +1046,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -37.251575
-    y: 169.23997
+    x: 226.95921
+    y: 102.23458
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 8
-  blockName: tattoo
+  itemId: 16
+  blockName: Drink
   description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1434231466}
 --- !u!114 &1434231466
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1078,9 +1070,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 10
+  itemId: 20
   indentLevel: 0
-  storyText: Thanks..
+  storyText: I'm already drinking something, however if you want to buy me one later,
+    well see.
   description: 
   character: {fileID: 466089993}
   portrait: {fileID: 0}
@@ -1109,7 +1102,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Can I buy you a drink?
   description: 
-  targetBlock: {fileID: 1434231468}
+  targetBlock: {fileID: 1434231465}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -1120,61 +1113,58 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &1434231468
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434231460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 235.88266
-    y: 155.80717
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 7
-  blockName: drink
+  itemId: 19
+  indentLevel: 0
+  storyText: 'Just enjoying my glass here. '
   description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1434231478}
-  - {fileID: 1434231477}
-  - {fileID: 1434231473}
-  - {fileID: 1434231469}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1434231469
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434231460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 22
+  itemId: 18
   indentLevel: 0
-  text: 'What do you reccomend eating here?
-
-
-'
+  storyText: 'I''m fine '
   description: 
-  targetBlock: {fileID: 1434231470}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1434231470
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1189,229 +1179,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 125.434784
-    y: 311.03146
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 23
-  blockName: food
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1434231472}
-  - {fileID: 1434231471}
---- !u!114 &1434231471
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434231460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 25
-  indentLevel: 0
-  storyText: Oh..don't tell anyone but I also like finger fries dipped in brain juice.
-    You have to try it.
-  description: 
-  character: {fileID: 466089993}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1434231472
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434231460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 24
-  indentLevel: 0
-  storyText: I'm an ears and salsa kind of girl.
-  description: 
-  character: {fileID: 466089993}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1434231473
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434231460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 21
-  indentLevel: 0
-  text: I'm a mature person and your a mature person, so why not skip the b.s. and
-    do what we really wanna do.
-  description: 
-  targetBlock: {fileID: 1434231474}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &1434231474
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434231460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 291.10614
-    y: 314.0158
+    x: 16.502697
+    y: 129.11601
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 17
-  blockName: mature
+  blockName: hru
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1434231476}
-  - {fileID: 1434231475}
---- !u!114 &1434231475
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434231460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 19
-  indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: Gameover
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
---- !u!114 &1434231476
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434231460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 18
-  indentLevel: 0
-  storyText: 'Really? What do you take me for. You disgusting douch bag
-
-'
-  description: 
-  character: {fileID: 466089993}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 6378ea6db779fad44a1c965b0a47374d, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1434231477
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434231460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 20
-  indentLevel: 0
-  storyText: Anything else you want to say?
-  description: 
-  character: {fileID: 466089993}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1434231478
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434231460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 11
-  indentLevel: 0
-  storyText: I'm not much of a drinker, its not healthy. You shouldn't drink either.
-  description: 
-  character: {fileID: 466089993}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 8300000, guid: 6378ea6db779fad44a1c965b0a47374d, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  - {fileID: 1434231469}
+  - {fileID: 1434231468}
 --- !u!114 &1434231479
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1426,7 +1206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: Ya got something to say?
+  storyText: What do you want?
   description: 
   character: {fileID: 466089993}
   portrait: {fileID: 0}
@@ -1453,7 +1233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: '....'
+  storyText: Yes?
   description: 
   character: {fileID: 466089993}
   portrait: {fileID: 0}
@@ -1979,7 +1759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6156863}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
