@@ -1284,11 +1284,11 @@ GameObject:
   - component: {fileID: 2001437222}
   - component: {fileID: 2001437219}
   - component: {fileID: 2001437227}
-  - component: {fileID: 2001437228}
   - component: {fileID: 2001437229}
   - component: {fileID: 2001437233}
   - component: {fileID: 2001437232}
   - component: {fileID: 2001437230}
+  - component: {fileID: 2001437234}
   m_Layer: 0
   m_Name: Jin
   m_TagString: Untagged
@@ -1325,7 +1325,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 73
-    y: 63.537308
+    y: 62.04477
     width: 120
     height: 40
   tint: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
@@ -1335,7 +1335,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 2001437213}
   commandList:
-  - {fileID: 2001437228}
+  - {fileID: 2001437234}
   - {fileID: 2001437227}
   - {fileID: 2001437218}
   - {fileID: 2001437229}
@@ -1369,9 +1369,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2001437221}
+  - {fileID: 2001437214}
   selectedCommands:
-  - {fileID: 2001437233}
+  - {fileID: 2001437234}
   variables: []
   description: 
   stepPause: 0
@@ -1590,7 +1590,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -37.251583
-    y: 146.8519
+    y: 145.35936
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1672,29 +1672,6 @@ MonoBehaviour:
   soundClip: {fileID: 8300000, guid: 93aacc5a21c55464facb4237406409dc, type: 3}
   volume: 0.125
   loop: 1
---- !u!114 &2001437228
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001437212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc30c92f7ffe3d746ac76cd528d616e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 14
-  indentLevel: 0
-  control: 1
-  _audioSource:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 325961087}
-  startVolume: 1
-  endVolume: 0.101
-  fadeDuration: 0
-  waitUntilFinished: 0
-  audioSourceOLD: {fileID: 0}
 --- !u!114 &2001437229
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1777,6 +1754,29 @@ MonoBehaviour:
     stringVal: Main Screen
   loadingImage: {fileID: 0}
   sceneNameOLD: 
+--- !u!114 &2001437234
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001437212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc30c92f7ffe3d746ac76cd528d616e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 22
+  indentLevel: 0
+  control: 1
+  _audioSource:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 325961087}
+  startVolume: 1
+  endVolume: 0.101
+  fadeDuration: 0
+  waitUntilFinished: 0
+  audioSourceOLD: {fileID: 0}
 --- !u!1 &2100900949
 GameObject:
   m_ObjectHideFlags: 0

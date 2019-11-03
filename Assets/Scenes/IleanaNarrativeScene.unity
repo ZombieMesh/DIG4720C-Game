@@ -376,7 +376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Ileana
-  nameColor: {r: 0, g: 1, b: 0.105882354, a: 1}
+  nameColor: {r: 0.010679938, g: 0.754717, b: 0.088113606, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
@@ -840,7 +840,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1557219434}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &905771858
 AudioSource:
@@ -1355,7 +1355,6 @@ Transform:
   - {fileID: 1495410988}
   - {fileID: 188277964}
   - {fileID: 665323006}
-  - {fileID: 2063059263}
   - {fileID: 905771857}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1404,13 +1403,14 @@ GameObject:
   - component: {fileID: 2028578760}
   - component: {fileID: 2028578759}
   - component: {fileID: 2028578758}
-  - component: {fileID: 2028578771}
   - component: {fileID: 2028578770}
   - component: {fileID: 2028578769}
   - component: {fileID: 2028578768}
   - component: {fileID: 2028578767}
   - component: {fileID: 2028578766}
   - component: {fileID: 2028578747}
+  - component: {fileID: 2028578772}
+  - component: {fileID: 2028578771}
   m_Layer: 0
   m_Name: Ileana
   m_TagString: Untagged
@@ -1443,8 +1443,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2028578732}
-  selectedCommands: []
+  - {fileID: 2028578745}
+  selectedCommands:
+  - {fileID: 2028578733}
   variables: []
   description: 
   stepPause: 0
@@ -1510,6 +1511,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 2028578730}
   - {fileID: 2028578754}
+  - {fileID: 2028578771}
   - {fileID: 2028578753}
   - {fileID: 2028578752}
 --- !u!114 &2028578732
@@ -1553,7 +1555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 15
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: fbb560ac468ed5d4a8e74a64d163207b, type: 3}
+  soundClip: {fileID: 8300000, guid: caad978c43f49a44d9032436306ed6ee, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &2028578734
@@ -1663,7 +1665,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -37.251575
-    y: 167.74744
+    y: 166.1081
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2147,7 +2149,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2028578758}
-  - {fileID: 2028578771}
+  - {fileID: 2028578772}
   - {fileID: 2028578769}
 --- !u!114 &2028578758
 MonoBehaviour:
@@ -2163,9 +2165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 36
   indentLevel: 0
-  storyText: Oh cool, mine is about a human who had the opportunity to kill me, chose
-    not to, and ended up dying. Wanna get some ears and salsa and talk about your
-    tats?
+  storyText: 'Oh cool, mine says Mercy, because once a human had the opportunity to
+    kill me, chose not to, and ended up being killed. '
   description: 
   character: {fileID: 222022767}
   portrait: {fileID: 0}
@@ -2471,14 +2472,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 2028578728}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d88125c88dab4a44851835e94ff4d90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 45
+  indentLevel: 0
+  shuffleMode: 1
+--- !u!114 &2028578772
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028578728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 37
+  itemId: 44
   indentLevel: 0
-  storyText: Sure, sounds good to me
+  storyText: Lets get some ears and salsa and talk about your tats.
   description: 
-  character: {fileID: 1418105099}
+  character: {fileID: 222022767}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2489,130 +2505,3 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!1 &2063059262
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2063059263}
-  - component: {fileID: 2063059264}
-  m_Layer: 0
-  m_Name: shoetake1editedcut
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2063059263
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063059262}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7178009, y: 0.20118245, z: 2.3278258}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1557219434}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &2063059264
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063059262}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fbb560ac468ed5d4a8e74a64d163207b, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4

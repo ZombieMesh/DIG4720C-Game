@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Dulla
-  nameColor: {r: 1, g: 0.8039216, b: 0, a: 1}
+  nameColor: {r: 0.7924528, g: 0.65208393, b: 0.0710217, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
@@ -971,8 +971,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1434231509}
-  selectedCommands: []
+  - {fileID: 1434231463}
+  selectedCommands:
+  - {fileID: 1434231481}
   variables: []
   description: 
   stepPause: 0
@@ -1165,7 +1166,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 'Just enjoying my glass here. '
   description: 
-  character: {fileID: 0}
+  character: {fileID: 466089993}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1192,7 +1193,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 'I''m fine '
   description: 
-  character: {fileID: 0}
+  character: {fileID: 466089993}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1493,7 +1494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 15
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: fbb560ac468ed5d4a8e74a64d163207b, type: 3}
+  soundClip: {fileID: 8300000, guid: caad978c43f49a44d9032436306ed6ee, type: 3}
   volume: 1
   waitUntilFinished: 0
 --- !u!114 &1434231482
@@ -1664,7 +1665,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -68.03336
-    y: 305.92007
+    y: 304.65427
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1821,7 +1822,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 95.88421
-    y: 176.02309
+    y: 174.75726
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
