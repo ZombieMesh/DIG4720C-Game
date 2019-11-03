@@ -22,7 +22,7 @@ public class DateChoice : MonoBehaviour
 
     public void ChooseScience()
     {
-        SceneManager.LoadScene("Level 3");
+        SceneManager.LoadScene("FrankieNarrativeScene");
     }
     
     
