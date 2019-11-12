@@ -706,10 +706,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 91a75f58-66a3-4c95-8dbb-4d8f62594a68
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: NecroLove
+  organizationId: unity_g7wqannjuft_ca
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
