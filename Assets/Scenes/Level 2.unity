@@ -178,10 +178,10 @@ MonoBehaviour:
   m_ChildAlignment: 5
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 150}
-  m_Spacing: {x: 30, y: 20}
-  m_Constraint: 1
-  m_ConstraintCount: 6
+  m_CellSize: {x: 90, y: 140}
+  m_Spacing: {x: 20, y: 10}
+  m_Constraint: 2
+  m_ConstraintCount: 4
 --- !u!114 &36932214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,11 +695,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 46
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 6
     m_MaxSize: 67
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -732,8 +732,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 124, y: -154}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 444.3, y: -54.395996}
+  m_SizeDelta: {x: 120.6, y: 55.194}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1243473603
 GameObject:
@@ -808,8 +808,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243473603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.73, y: -0.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.34, y: -1.28, z: 0}
+  m_LocalScale: {x: 1.3510249, y: 1.3420718, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -848,8 +848,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -335, y: -125}
-  m_SizeDelta: {x: 160, y: 55.200012}
+  m_AnchoredPosition: {x: -413, y: -54.395996}
+  m_SizeDelta: {x: 153.8, y: 55.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1669662982
 MonoBehaviour:
@@ -872,12 +872,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 47
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 52
+    m_MinSize: 6
+    m_MaxSize: 65
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -924,7 +924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleField: {fileID: 36932212}
-  amountOfButtons: 24
+  amountOfButtons: 16
   btn: {fileID: 6333678080901032690, guid: 474e17c5169bc6d4c8ee78729c5076be, type: 3}
 --- !u!4 &1816884339
 Transform:
@@ -971,14 +971,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 458e800ac5ebc3d41a89e699c6734a87, type: 3}
   - {fileID: 21300000, guid: 9b8401aa071026a4680e875e68bc3ddb, type: 3}
   - {fileID: 21300000, guid: 80372d2948bb9ac4f95d6a395434af0c, type: 3}
-  - {fileID: 21300000, guid: f3cdaadcd4da0694bbec0a7b512d1f19, type: 3}
-  - {fileID: 21300000, guid: 31d6d4bba6f585b448baa1fa47c6b7b4, type: 3}
-  - {fileID: 21300000, guid: f668da52ddef82f4e804c5df5e9156b5, type: 3}
-  - {fileID: 21300000, guid: d27a1a0772b7d8640803b5637e213ca1, type: 3}
-  - {fileID: 21300000, guid: b03da7c278e9ad248a9e2549207c9944, type: 3}
-  - {fileID: 21300000, guid: 10bac3c06493dd24896594e8115ff46a, type: 3}
-  - {fileID: 21300000, guid: 458e800ac5ebc3d41a89e699c6734a87, type: 3}
-  - {fileID: 21300000, guid: 9b8401aa071026a4680e875e68bc3ddb, type: 3}
   gamePuzzles: []
   nextScene: 12
   uiText: {fileID: 1669662982}
@@ -1023,7 +1015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -371, y: -226}
+  m_AnchoredPosition: {x: 0, y: -201}
   m_SizeDelta: {x: 275.2, y: 140.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1824151963
