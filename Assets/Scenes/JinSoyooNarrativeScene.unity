@@ -951,11 +951,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
-    m_FontSize: 70
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 7
-    m_MaxSize: 70
+    m_MaxSize: 80
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3099,11 +3099,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
-    m_FontSize: 55
+    m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
-    m_MaxSize: 62
+    m_MaxSize: 75
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3398,9 +3398,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2001437214}
+  - {fileID: 2001437224}
   selectedCommands:
-  - {fileID: 2001437231}
+  - {fileID: 2001437232}
   variables: []
   description: 
   stepPause: 0
@@ -3484,7 +3484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: ugh I only have 1 beautiful eye. Whats wrong with you?
+  storyText: ugh I only have one beautiful eye. What's wrong with you?
   description: 
   character: {fileID: 1704802110}
   portrait: {fileID: 0}
@@ -3540,7 +3540,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 265.73334
     y: 142.37433
-    width: 120.14922
+    width: 133.58205
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3754,7 +3754,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &2001437231
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3781,7 +3781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
-  storyText: Lets get a table.
+  storyText: Let's get a table.
   description: 
   character: {fileID: 1704802110}
   portrait: {fileID: 0}
