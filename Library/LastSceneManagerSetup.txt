@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/JinSoyooNarrativeScene.unity
+- path: Assets/Scenes/JinSo Win.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
