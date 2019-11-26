@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/JinSo Win.unity
+- path: Assets/Scenes/DullaWin.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
