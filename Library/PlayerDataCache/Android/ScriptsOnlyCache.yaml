@@ -55,6 +55,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -3623,4 +3625,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Settings.unity
   - Assets/Scenes/intro.unity
   - Assets/Scenes/FrankieNarrativeScene.unity
-  playerPath: C:/Users/Luis_/Documents/GitHub/DIG4720C-Game/necrolove.apk
+  playerPath: D:/Fall 2019/DIG 4720C Casual Production/DIG4720C-Game/Builds/NecroLoveAlpha.apk
